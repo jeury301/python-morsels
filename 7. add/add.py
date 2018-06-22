@@ -26,7 +26,7 @@ def add(*args):
             if len(col) != cols:
                 raise ValueError("Given matrices are not the same size.")
 
-    final_matrix = shallow_copy(args[0], rows, cols)
+    final_matrix = deep_copy(args[0], rows, cols)
     
     # for each row
     for row in range(rows):
@@ -39,7 +39,7 @@ def add(*args):
 
     return final_matrix
 
-def shallow_copy(to_copy, rows, cols):
+def deep_copy(to_copy, rows, cols):
     """Need i say?
     """
     clean_mtx = []
