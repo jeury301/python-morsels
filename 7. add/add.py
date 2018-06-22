@@ -1,8 +1,8 @@
 
 def add(*args):
-    """Adding to matrices!
+    """Adding matrices!
 
-    This function takes two matrices of the same size and performs matrix
+    This function matrices of the same size and performs matrix
     addition.
 
     Args:
