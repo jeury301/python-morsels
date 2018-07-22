@@ -11,7 +11,8 @@ def multimax(k, key=None):
     """
     p = list(k)[:]
     if not p: return []
-    if key: return [x for x in p if key(x) == key(sorted(p, key=key)[::-1][0])]
+    if key:
+        return [x for x in p if key(x) == key(sorted(p, key=key)[::-1][0])]
     return [x for x in p if x == sorted(p, key=key)[::-1][0]]
 
 if __name__ == "__main__":
